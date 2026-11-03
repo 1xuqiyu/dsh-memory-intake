@@ -1,0 +1,45 @@
+{
+  "name": "dsh-memory-intake",
+  "version": "0.1.0",
+  "description": "Zero-dependency agent memory that routes deterministically by keyword instead of embedding — a skill, a checker, and a Markdown format.",
+  "type": "module",
+  "bin": {
+    "memory-doctor": "scripts/memory-doctor.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "scripts/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "doctor": "node scripts/memory-doctor.mjs",
+    "install-skill": "node scripts/init.mjs --install",
+    "check": "node scripts/init.mjs --check",
+    "test": "node --test tests/doctor.test.mjs"
+  },
+  "keywords": [
+    "agent",
+    "memory",
+    "context-engineering",
+    "agents-md",
+    "llm",
+    "dsh",
+    "deepseek-harness",
+    "markdown",
+    "no-embeddings"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1xuqiyu/dsh-memory-intake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1xuqiyu/dsh-memory-intake/issues"
+  },
+  "homepage": "https://github.com/1xuqiyu/dsh-memory-intake#readme"
+}
